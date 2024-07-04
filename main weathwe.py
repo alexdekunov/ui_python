@@ -10,7 +10,6 @@ def main(page: ft.Page):
 
     def get_info(e):
         pass
-        # тут прописываем апи погоды и выводим в приложение
 
 
     def change_theme(e):
