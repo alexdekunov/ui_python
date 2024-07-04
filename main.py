@@ -1,4 +1,5 @@
 import flet as ft
+import requests
 
 def main(page: ft.Page):
     page.title = "Погода"
@@ -23,7 +24,9 @@ def main(page: ft.Page):
                 ft.Text('Погодная программа')
             ],
             alignment=ft.MainAxisAlignment.CENTER
-        )
+        ),
+        ft.Row([user_data], alignment=ft.MainAxisAlignment.CENTER),
+        ft.Row([ft.ElevatedButton(text='Получить', on_click=get_info)], alignment=ft.MainAxisAlignment.CENTER)
     )
 
   
